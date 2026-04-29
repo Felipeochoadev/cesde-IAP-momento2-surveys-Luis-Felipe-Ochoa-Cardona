@@ -1,14 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La IA en el desarrollo de software</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+    <header>
+        <h1>La IA en el desarrollo de software</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="survey.html">Encuesta</a></li>
+                <li><a href="contact-us.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Encuesta</h2>
+            <form action="index.html" method="GET">
+                <article>
+                    <p>1. ¿Con qué frecuencia utilizas asistentes de IA (como Copilot o ChatGPT) para programar?</p>
+                    <label for="diariamente">
+                        <input type="radio" name="frecuencia" value="diariamente" id="diariamente" required>
+                        Diariamente
+                    </label>
+                    <label for="semanalmente">
+                        <input type="radio" name="frecuencia" value="semanalmente" id="semanalmente"> Semanalmente
+                    </label>
+                    <label>
+                        <input type="radio" name="frecuencia" value="nunca" id="nunca"> Nunca
+                    </label>
+                </article>
 
+                <article>
+                    <p>2. ¿Para qué tarea principal usas la IA al desarrollar?</p>
+                    <label for="autocompletado">
+                        <input type="radio" name="tarea" value="autocompletado" id="autocompletado" required>
+                        Autocompletado de código
+                    </label>
+                    <label for="debugging">
+                        <input type="radio" name="tarea" value="debugging" id="debugging"> Resolución de errores
+                        (Debugging)
+                    </label>
+                    <label for="aprendizaje">
+                        <input type="radio" name="tarea" value="aprendizaje" id="aprendizaje"> Aprender nuevos
+                        conceptos
+                    </label>
+                </article>
+
+                <article>
+                    <p>3. ¿Consideras que la IA ha mejorado tu productividad en el desarrollo de software?</p>
+                    <label for="mucho">
+                        <input type="radio" name="productividad" value="mucho" id="mucho" required> Sí,
+                        significativamente
+                    </label>
+                    <label for="poco">
+                        <input type="radio" name="productividad" value="poco" id="poco"> Sí, un poco
+                    </label>
+                    <label for="nada">
+                        <input type="radio" name="productividad" value="nada" id="nada"> No he notado cambios o ha
+                        empeorado
+                    </label>
+                </article>
+
+                <article>
+                    <p>4. ¿Crees que la IA terminará realizando gran parte de la codificación en los próximos años?</p>
+                    <label for="si">
+                        <input type="radio" name="reemplazo" value="si" id="si" required> Sí, definitivamente
+                    </label>
+                    <label for="no">
+                        <input type="radio" name="reemplazo" value="no" id="no"> No, seguirá siendo una herramienta de
+                        apoyo
+                    </label>
+                    <label for="talvez">
+                        <input type="radio" name="reemplazo" value="talvez" id="talvez"> Tal vez, dependerá de la
+                        evolución de las tecnologías
+                    </label>
+                </article>
+
+                <button type="submit">Enviar Encuesta</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Luis Felipe Ochoa Cardona - Todos los derechos reservados © 2026</p>
+    </footer>
 </body>
 
 </html>

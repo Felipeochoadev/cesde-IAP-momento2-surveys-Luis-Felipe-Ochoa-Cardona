@@ -50,6 +50,7 @@ section {
     box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.1);
 }
 
+
 h1,
 h2 {
     margin-top: 0;
@@ -89,4 +90,44 @@ footer {
 
 footer p {
     margin: 0.3em;
+}
+
+
+article {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 0.1em solid #eee;
+}
+
+article:last-of-type {
+    border-bottom: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 0;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.3em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1em;
 }
