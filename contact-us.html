@@ -1,14 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La IA en el desarrollo de software</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+    <header>
+        <h1>La IA en el desarrollo de software</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="survey.html">Crear encuesta</a></li>
+                <li><a href="contact-us.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form action="index.html" method="GET">
+                <article>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </article>
 
+                <article>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </article>
+
+                <article>
+                    <p>¿Eres estudiante?</p>
+                    <label for="estudiante-si">
+                        <input type="radio" id="estudiante-si" name="estudiante" value="si"> Sí
+                    </label>
+                    <label for="estudiante-no">
+                        <input type="radio" id="estudiante-no" name="estudiante" value="no"> No
+                    </label>
+                </article>
+
+                <article>
+                    <p>Intereses en tecnología (selecciona al menos uno):</p>
+                    <label for="interes-frontend">
+                        <input type="checkbox" id="interes-frontend" name="intereses" value="frontend"> Frontend
+                    </label>
+                    <label for="interes-backend">
+                        <input type="checkbox" id="interes-backend" name="intereses" value="backend"> Backend
+                    </label>
+                    <label for="interes-ia">
+                        <input type="checkbox" id="interes-ia" name="intereses" value="ia"> Inteligencia Artificial
+                    </label>
+                </article>
+
+                <article>
+                    <label for="rol">Rol principal:</label>
+                    <select id="rol" name="rol">
+                        <option value="desarrollador">Desarrollador</option>
+                        <option value="estudiante">Estudiante Universitario/Técnico</option>
+                        <option value="aficionado">Aficionado a la programación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </article>
+
+                <article>
+                    <label for="mensaje">Mensaje o comentarios adicionales:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </article>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Luis Felipe Ochoa Cardona - Todos los derechos reservados © 2026</p>
+    </footer>
 </body>
 
 </html>
